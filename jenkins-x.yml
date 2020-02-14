@@ -4,7 +4,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.azk8s.cn/jenkinsxio/builder-jx:0.1.792
         stages:
           - name: changelog
             environment:
@@ -44,5 +44,5 @@ pipelineConfig:
                 command: ./jx/scripts/update-jx-bot.sh
 
               - name: update-jx-website
-                image: gcr.io/jenkinsxio/builder-go:2.0.1192-533
+                image: gcr.azk8s.cn/jenkinsxio/builder-go:2.0.1192-533
                 command: ./jx/scripts/update-jx-website.sh

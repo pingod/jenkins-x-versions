@@ -13,7 +13,7 @@ service:
 replicaCount: 2
 
 image:
-  repository: gcr.io/jenkinsxio/lighthouse
+  repository: gcr.azk8s.cn/jenkinsxio/lighthouse
 
 vault:
 {{- if eq .Values.jxRequirements.secretStorage "vault" }}
